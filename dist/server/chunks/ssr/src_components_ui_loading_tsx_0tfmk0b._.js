@@ -1,0 +1,3 @@
+module.exports=[27498,a=>{"use strict";var b=a.i(87924),c=a.i(45113);a.s(["RingLoader",0,function({color:a="currentColor",className:d,...e}){return(0,b.jsx)("svg",{xmlns:"http://www.w3.org/2000/svg",width:"24",height:"24",viewBox:"0 0 24 24",fill:"none",stroke:a,strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round",className:(0,c.cn)("animate-spin text-[--color-500]",d),...e,children:(0,b.jsx)("path",{d:"M21 12a9 9 0 1 1-6.219-8.56"})})}])}];
+
+//# sourceMappingURL=src_components_ui_loading_tsx_0tfmk0b._.js.map
