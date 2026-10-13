@@ -1,0 +1,58 @@
+{
+  "name": "liontravel-b2c-survey-next",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@8.14.0",
+  "engines": {
+    "node": "22.20.0",
+    "pnpm": "8.14.0"
+  },
+  "scripts": {
+    "dev": "cross-env ENV=development LOCAL=true next dev",
+    "build": "pnpm build:release",
+    "build:release": "cross-env ENV=development next build",
+    "build:prod": "cross-env ENV=production next build",
+    "start": "next start",
+    "start:dev": "cross-env ENV=development next start",
+    "start:prod": "cross-env ENV=production next start",
+    "lint": "eslint app src",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "release": "pnpm build:release",
+    "prod": "pnpm build:prod"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.9.1",
+    "@lion-libs/react-ui": "^0.37.0",
+    "clsx": "^2.1.1",
+    "cross-env": "^10.1.0",
+    "next": "16.2.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-hook-form": "^7.88.0",
+    "tailwind-merge": "^1.14.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@lion-utility/eslint-config": "^0.2.1",
+    "@types/node": "^22.20.4",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.27",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "15.5.7",
+    "eslint-config-prettier": "^9.1.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "postcss": "^8.5.8",
+    "prettier": "^3.7.4",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5",
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "^5.0.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "eslint-plugin-react-hooks": "4.6.2"
+    }
+  }
+}
